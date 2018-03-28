@@ -1,0 +1,69 @@
+
+.panel {
+
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  background: $azure;
+
+  &__item {
+
+    position: relative;
+    height: 15rem;
+    padding: 3rem 0;
+    margin: 0 2rem;
+    text-align: center;
+    color: $mountainMist;
+
+    & img {
+        transition: transform .3s;
+    }
+
+    & .label {
+        transition: color .8s;
+    }
+
+    &_active {
+
+      color: $abbey;
+      border-bottom: 3px solid $mantis;
+
+      & img {
+        transform: scale(1.1);
+      }
+    }
+
+    // with opacity ? 
+    &_inactive {
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $geyser;
+      }
+    }
+
+    &:hover {
+
+      cursor: pointer;
+      opacity: none;
+
+      & img {
+        transform: scale(1.1);
+      }
+
+      & .label {
+        color: $abbey;
+      }
+    }
+
+  }
+}
+
+.icon {
+  height: 5.4rem;
+}
+
+.label {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}

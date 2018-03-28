@@ -1,0 +1,25 @@
+$menu-heigth: 93vh;
+$menu-width: 25rem;
+
+.dashboard {
+
+  position: relative;
+
+  &__side-pane {
+    height: $menu-heigth;
+    width: $menu-width;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $seaShell;
+    z-index:5;
+  }
+
+  &__content {
+    position: relative;
+    height: $menu-heigth;
+    padding-left: $menu-width;
+    background: $seaShell;
+  }
+
+}
