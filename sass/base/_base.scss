@@ -1,0 +1,19 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'); // bootstrap v4
+
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+}
