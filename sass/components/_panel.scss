@@ -2,9 +2,10 @@
 .panel {
 
   position: relative;
-  margin-top: 4rem;
-  margin-left: 5rem;
+  margin-top: 7rem;
+  margin-left: 6rem;
   background: $azure;
+  @include shadow;
 
   &__item {
 
@@ -13,14 +14,13 @@
     padding: 3rem 0;
     margin: 0 2rem;
     text-align: center;
-    color: $mountainMist;
 
     & img {
-        transition: transform .3s;
+        transition: transform .1s;
     }
 
     & .label {
-        transition: color .8s;
+        transition: color .5s;
     }
 
     &_active {
@@ -33,8 +33,10 @@
       }
     }
 
-    // with opacity ? 
+    // with opacity ?
     &_inactive {
+
+      color: $mountainMist;
 
       &:not(:last-child) {
         border-bottom: 1px solid $geyser;

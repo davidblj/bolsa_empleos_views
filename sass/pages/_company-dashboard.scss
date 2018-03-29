@@ -6,6 +6,7 @@ $menu-width: 25rem;
   position: relative;
 
   &__side-pane {
+    
     height: $menu-heigth;
     width: $menu-width;
     position: absolute;
@@ -16,7 +17,9 @@ $menu-width: 25rem;
   }
 
   &__content {
-    position: relative;
+
+    position: absolute;
+    width: 100%;
     height: $menu-heigth;
     padding-left: $menu-width;
     background: $seaShell;

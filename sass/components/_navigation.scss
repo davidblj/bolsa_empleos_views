@@ -1,0 +1,29 @@
+
+.navigation {
+
+  margin: 7rem 8rem 0;
+  border-bottom: 2px solid $geyser;
+
+  &__item {
+
+    display: inline-block;
+    font-size: 1.7rem;    
+    letter-spacing: 1px;
+    padding:  0 0 2.5rem;
+    margin-right: 4rem;
+    margin-bottom: 0;
+
+    &_active {
+      color: $mantis;
+      border-bottom: 4px solid $mantis;
+    }
+
+    &_inactive {
+
+      &:hover {
+        color: $mountainMist;
+        cursor: pointer;
+      }
+    }
+  }
+}
