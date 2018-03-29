@@ -1,13 +1,14 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/utilities";
 
 @import "base/base";
 @import "base/typography";
 
 @import "components/panel";
 @import "components/navigation";
+@import "components/table";
 
 @import "layout/header";
 
 @import "pages/company-dashboard";
- 

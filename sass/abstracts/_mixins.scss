@@ -2,3 +2,6 @@
 @mixin shadow {
   box-shadow: 0 0 10px -2px $geyser;
 }
+@mixin strong-shadow {
+  box-shadow: 0 0 15px -2px $geyser;
+}

@@ -1,5 +1,8 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600");
+.u-wrapper {
+  position: relative; }
+
 *,
 *::after
 *::before {
@@ -32,7 +35,8 @@ body {
     margin: 0 2rem;
     text-align: center; }
     .panel__item img {
-      transition: transform .1s; }
+      transition: transform .1s;
+      height: 5.4rem; }
     .panel__item .label {
       transition: color .5s; }
     .panel__item_active {
@@ -51,9 +55,6 @@ body {
         transform: scale(1.1); }
       .panel__item:hover .label {
         color: #464650; }
-
-.icon {
-  height: 5.4rem; }
 
 .label {
   margin-top: 1.5rem;
@@ -76,6 +77,48 @@ body {
     .navigation__item_inactive:hover {
       color: #928D96;
       cursor: pointer; }
+
+.custom-table {
+  margin: 5rem 8rem 0;
+  position: relative; }
+
+.table-header {
+  margin-bottom: 2rem; }
+  .table-header__item {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-left: 2%; }
+
+.table-row {
+  background-color: #F7F9f9;
+  border-radius: 5px;
+  margin-top: 1.2rem;
+  transition: margin-left .5s; }
+  .table-row__item {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1.5rem 2%; }
+    .table-row__item img {
+      width: 2rem; }
+  .table-row:hover {
+    box-shadow: 0 0 15px -2px #CDD9DC;
+    width: calc(100% + 2%);
+    margin-left: calc(-2%/2);
+    border-left: 4px solid #5cc26c; }
+
+.size_big {
+  width: 42%; }
+
+.size_medium {
+  width: 20%; }
+
+.size_small {
+  width: 10%; }
+
+.size_tiny {
+  width: 5%; }
 
 .header {
   height: 7vh;

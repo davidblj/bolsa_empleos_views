@@ -17,6 +17,7 @@
 
     & img {
         transition: transform .1s;
+        height: 5.4rem;
     }
 
     & .label {
@@ -58,10 +59,6 @@
     }
 
   }
-}
-
-.icon {
-  height: 5.4rem;
 }
 
 .label {
