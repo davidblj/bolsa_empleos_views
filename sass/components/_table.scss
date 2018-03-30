@@ -1,9 +1,9 @@
 $left-table-spacing: 2%;
-$row-width-expansion: 2%;
+$row-width-expansion: 4rem;
 
 .custom-table {
 
-  margin: 5rem $side-margin 0;
+  margin: 5rem $dashboard-right-spacing 0;
   position: relative;
 }
 
@@ -26,7 +26,6 @@ $row-width-expansion: 2%;
   background-color: $azure;
   border-radius: 5px;
   margin-top: 1.2rem;
-  transition: margin-left .5s;
 
   &__item {
 

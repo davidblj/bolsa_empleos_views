@@ -1,15 +1,13 @@
 
 .panel {
-
-  position: relative;
+  
   margin-top: 7rem;
-  margin-left: 6rem;
+  margin-left: $dashboard-left-spacing;
   background: $azure;
   @include shadow;
 
   &__item {
 
-    position: relative;
     height: 15rem;
     padding: 3rem 0;
     margin: 0 2rem;

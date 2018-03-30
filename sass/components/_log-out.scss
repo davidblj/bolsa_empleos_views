@@ -1,0 +1,32 @@
+
+.logout-box {
+  min-height: 30rem;
+  position: relative;
+  display: block;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: calc(50%);
+  transform: translateX(-50%);
+  padding-left: $dashboard-left-spacing;
+
+  img {
+
+    height: 6rem;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  // &__message {
+  //
+  //   color: transparent;
+  //   margin-left: 3rem;
+  //   position: absolute;
+  //   left: calc(50%);
+  // }
+}

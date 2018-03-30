@@ -3,6 +3,9 @@
 .u-wrapper {
   position: relative; }
 
+.u-relative {
+  position: relative; }
+
 *,
 *::after
 *::before {
@@ -23,13 +26,11 @@ body {
   color: #464650; }
 
 .panel {
-  position: relative;
   margin-top: 7rem;
   margin-left: 6rem;
   background: #F7F9f9;
   box-shadow: 0 0 10px -2px #CDD9DC; }
   .panel__item {
-    position: relative;
     height: 15rem;
     padding: 3rem 0;
     margin: 0 2rem;
@@ -94,8 +95,7 @@ body {
 .table-row {
   background-color: #F7F9f9;
   border-radius: 5px;
-  margin-top: 1.2rem;
-  transition: margin-left .5s; }
+  margin-top: 1.2rem; }
   .table-row__item {
     display: inline-block;
     font-size: 1.6rem;
@@ -104,8 +104,8 @@ body {
       width: 2rem; }
   .table-row:hover {
     box-shadow: 0 0 15px -2px #CDD9DC;
-    width: calc(100% + 2%);
-    margin-left: calc(-2%/2);
+    width: calc(100% + 4rem);
+    margin-left: calc(-4rem/2);
     border-left: 4px solid #5cc26c; }
 
 .size_big {
@@ -120,16 +120,60 @@ body {
 .size_tiny {
   width: 5%; }
 
+.logout-box {
+  min-height: 30rem;
+  position: relative;
+  display: block; }
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: calc(50%);
+  transform: translateX(-50%);
+  padding-left: 6rem; }
+  .logout img {
+    height: 6rem; }
+    .logout img:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+
 .header {
-  height: 7vh;
+  height: 8vh;
   width: 100vw;
-  display: block;
-  background: #F7F9f9; }
+  padding: 1rem;
+  background: #F7F9f9;
+  position: relative; }
+  .header__logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    margin-left: 6rem; }
+    .header__logo img {
+      height: 4rem; }
+  .header .user {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: inline-block;
+    margin-right: 8rem; }
+    .header .user__name {
+      display: inline-block;
+      margin-right: 1.5rem;
+      line-height: 0;
+      font-size: 1.7rem; }
+      .header .user__name_bold {
+        font-weight: 600; }
+    .header .user__logo {
+      display: inline-block; }
+      .header .user__logo img {
+        height: 4rem; }
 
 .dashboard {
   position: relative; }
   .dashboard__side-pane {
-    height: 93vh;
+    height: 92vh;
     width: 25rem;
     position: absolute;
     top: 0;
@@ -139,6 +183,6 @@ body {
   .dashboard__content {
     position: absolute;
     width: 100%;
-    height: 93vh;
+    height: 92vh;
     padding-left: 25rem;
     background: #f1f0f0; }

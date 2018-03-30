@@ -5,3 +5,9 @@
 @mixin strong-shadow {
   box-shadow: 0 0 15px -2px $geyser;
 }
+
+@mixin y-mid-positioning {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
