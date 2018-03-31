@@ -1,0 +1,65 @@
+$navigation-heigth: 7rem;
+$header-heigth: 5rem;
+
+.applicants {
+
+  position: relative;
+  // a mixin
+  margin-top: $dashboard-top-spacing;
+  margin-left: $dashboard-left-spacing;
+  margin-right: $dashboard-right-spacing;
+
+  &__navigation {
+
+    height: $navigation-heigth;
+    display: block;
+    position: relative;
+
+    img {
+
+      @include mid-positioning;
+      margin-left: calc(-#{$dashboard-left-spacing});
+      height: 5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .applicant-list {
+
+  }
+}
+
+.applicants-header {
+
+  height: $header-height;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    // consider this as a mixin
+    left: 0;
+    font-size: 2.5rem;
+
+  }
+
+  &__download {
+
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: $mantis;
+    // transform: translateY(-20%);
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($mantis,0.5);
+    }
+  }
+}

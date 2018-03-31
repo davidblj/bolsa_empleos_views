@@ -1,21 +1,22 @@
+$icon-height: 5rem;
 
 .panel {
-  
-  margin-top: 7rem;
+
+  margin-top: $dashboard-top-spacing;
   margin-left: $dashboard-left-spacing;
   background: $azure;
   @include shadow;
 
   &__item {
 
-    height: 15rem;
+    height: 14rem;
     padding: 3rem 0;
     margin: 0 2rem;
     text-align: center;
 
     & img {
         transition: transform .1s;
-        height: 5.4rem;
+        height: $icon-height;
     }
 
     & .label {

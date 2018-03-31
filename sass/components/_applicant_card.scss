@@ -1,0 +1,104 @@
+$side-spacing: 4rem;
+$top-spacing: 4rem;
+$bottom-spacing: 2rem;
+
+$card-width: 40rem;
+$card-height: 18rem;
+
+.applicant-card {
+
+    background: $azure;
+    display: inline-block;
+    position: relative;
+    width: $card-width;
+    height: $card-height;
+
+    transition: box-shadow .7s,
+                transform .1s,
+                opacity 1s;
+    border-left: 10px solid $mantis;
+    text-align: center;
+
+    &__download {
+      opacity: 0;
+
+      img {
+        height: 4rem;
+        @include mid-positioning;
+
+        &:hover {
+          cursor: pointer;          
+        }
+      }
+    }
+
+    &:hover {
+
+      @include shadow;
+      transform: translateY(-4px);
+
+      .applicant-card-content {
+
+        animation: moveLeft .5s;
+        animation-fill-mode: forwards;
+      }
+
+      .applicant-card__download {
+
+        animation: fadeIn .5s;
+        animation-fill-mode: forwards;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: inherit;
+        width: calc(2 * #{$side-spacing});
+        background: lighten($mantis, 7%);
+      }
+    }
+}
+
+.applicant-card-content{
+
+  padding: $top-spacing $side-spacing $bottom-spacing;
+
+  &__name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+  }
+
+  &__email {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $mountainMist;
+  }
+
+  &__contact {
+    font-size: 2rem;
+    color: $deYork;
+  }
+
+}
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 100;
+  }
+}
+
+@keyframes moveLeft {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(calc(-#{$side-spacing}));
+  }
+}

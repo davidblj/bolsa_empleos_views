@@ -1,6 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600");
 .u-wrapper {
+  height: inherit;
   position: relative; }
 
 .u-relative {
@@ -26,18 +27,18 @@ body {
   color: #464650; }
 
 .panel {
-  margin-top: 7rem;
+  margin-top: 6rem;
   margin-left: 6rem;
   background: #F7F9f9;
   box-shadow: 0 0 10px -2px #CDD9DC; }
   .panel__item {
-    height: 15rem;
+    height: 14rem;
     padding: 3rem 0;
     margin: 0 2rem;
     text-align: center; }
     .panel__item img {
       transition: transform .1s;
-      height: 5.4rem; }
+      height: 5rem; }
     .panel__item .label {
       transition: color .5s; }
     .panel__item_active {
@@ -63,7 +64,7 @@ body {
   font-weight: 600; }
 
 .navigation {
-  margin: 7rem 8rem 0;
+  margin: 6rem 8rem 0;
   border-bottom: 2px solid #CDD9DC; }
   .navigation__item {
     display: inline-block;
@@ -120,22 +121,104 @@ body {
 .size_tiny {
   width: 5%; }
 
-.logout-box {
-  min-height: 30rem;
+.applicants {
   position: relative;
-  display: block; }
+  margin-top: 6rem;
+  margin-left: 6rem;
+  margin-right: 8rem; }
+  .applicants__navigation {
+    height: 7rem;
+    display: block;
+    position: relative; }
+    .applicants__navigation img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: calc(-6rem);
+      height: 5rem; }
+      .applicants__navigation img:hover {
+        cursor: pointer; }
 
-.logout {
-  position: absolute;
-  bottom: 0;
-  left: calc(50%);
-  transform: translateX(-50%);
-  padding-left: 6rem; }
-  .logout img {
-    height: 6rem; }
-    .logout img:hover {
-      cursor: pointer;
-      transform: scale(1.1); }
+.applicants-header {
+  height: 8vh;
+  position: relative; }
+  .applicants-header__title {
+    position: absolute;
+    left: 0;
+    font-size: 2.5rem; }
+  .applicants-header__download {
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: #5cc26c; }
+    .applicants-header__download:hover {
+      box-shadow: 0 1rem 2rem rgba(92, 194, 108, 0.5); }
+
+.applicant-card {
+  background: #F7F9f9;
+  display: inline-block;
+  position: relative;
+  width: 40rem;
+  height: 18rem;
+  transition: box-shadow .7s, transform .1s, opacity 1s;
+  border-left: 10px solid #5cc26c;
+  text-align: center; }
+  .applicant-card__download {
+    opacity: 0; }
+    .applicant-card__download img {
+      height: 4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .applicant-card__download img:hover {
+        cursor: pointer; }
+  .applicant-card:hover {
+    box-shadow: 0 0 10px -2px #CDD9DC;
+    transform: translateY(-4px); }
+    .applicant-card:hover .applicant-card-content {
+      animation: moveLeft .5s;
+      animation-fill-mode: forwards; }
+    .applicant-card:hover .applicant-card__download {
+      animation: fadeIn .5s;
+      animation-fill-mode: forwards;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: inherit;
+      width: calc(2 * 4rem);
+      background: #76cc83; }
+
+.applicant-card-content {
+  padding: 4rem 4rem 2rem; }
+  .applicant-card-content__name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-bottom: 2rem; }
+  .applicant-card-content__email {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #928D96; }
+  .applicant-card-content__contact {
+    font-size: 2rem;
+    color: #6bCb98; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100; } }
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-4rem)); } }
 
 .header {
   height: 8vh;
