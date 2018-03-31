@@ -135,13 +135,12 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      margin-left: calc(-6rem);
       height: 5rem; }
       .applicants__navigation img:hover {
         cursor: pointer; }
 
 .applicants-header {
-  height: 8vh;
+  height: 8rem;
   position: relative; }
   .applicants-header__title {
     position: absolute;
@@ -165,6 +164,8 @@ body {
   position: relative;
   width: 40rem;
   height: 18rem;
+  margin-bottom: 5rem;
+  margin-right: 8rem;
   transition: box-shadow .7s, transform .1s, opacity 1s;
   border-left: 10px solid #5cc26c;
   text-align: center; }
@@ -179,13 +180,13 @@ body {
       .applicant-card__download img:hover {
         cursor: pointer; }
   .applicant-card:hover {
-    box-shadow: 0 0 10px -2px #CDD9DC;
+    box-shadow: 0 0 15px -2px #CDD9DC;
     transform: translateY(-4px); }
     .applicant-card:hover .applicant-card-content {
-      animation: moveLeft .5s;
+      animation: moveLeft 0.1s;
       animation-fill-mode: forwards; }
     .applicant-card:hover .applicant-card__download {
-      animation: fadeIn .5s;
+      animation: fadeIn .7s;
       animation-fill-mode: forwards;
       position: absolute;
       right: 0;
@@ -197,7 +198,7 @@ body {
 .applicant-card-content {
   padding: 4rem 4rem 2rem; }
   .applicant-card-content__name {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding-bottom: 2rem; }
   .applicant-card-content__email {

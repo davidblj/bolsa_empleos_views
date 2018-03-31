@@ -1,9 +1,10 @@
 $side-spacing: 4rem;
 $top-spacing: 4rem;
 $bottom-spacing: 2rem;
-
 $card-width: 40rem;
 $card-height: 18rem;
+$card-margin-bottom: 5rem;
+$card-margin-rigth: 8rem;
 
 .applicant-card {
 
@@ -12,6 +13,8 @@ $card-height: 18rem;
     position: relative;
     width: $card-width;
     height: $card-height;
+    margin-bottom: $card-margin-bottom;
+    margin-right: $card-margin-rigth;
 
     transition: box-shadow .7s,
                 transform .1s,
@@ -27,25 +30,25 @@ $card-height: 18rem;
         @include mid-positioning;
 
         &:hover {
-          cursor: pointer;          
+          cursor: pointer;
         }
       }
     }
 
     &:hover {
 
-      @include shadow;
+      @include strong-shadow;
       transform: translateY(-4px);
 
       .applicant-card-content {
 
-        animation: moveLeft .5s;
+        animation: moveLeft 0.1s;
         animation-fill-mode: forwards;
       }
 
       .applicant-card__download {
 
-        animation: fadeIn .5s;
+        animation: fadeIn .7s;
         animation-fill-mode: forwards;
 
         position: absolute;
@@ -63,7 +66,7 @@ $card-height: 18rem;
   padding: $top-spacing $side-spacing $bottom-spacing;
 
   &__name {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
     padding-bottom: 2rem;
   }
