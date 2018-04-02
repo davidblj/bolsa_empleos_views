@@ -1,0 +1,24 @@
+// this is an stand alone component
+// use a mixin for common rules, or a global style ? <- global
+
+.button {
+
+  font-size: 1.2rem; 
+  letter-spacing: 2px;
+  font-weight:600;
+  border-radius: 100px;
+  transition: background-color .3s;
+  padding: 0.8rem 6rem;
+  background-color: $azure;
+  border: 2px solid $mantis;
+
+  &:hover {
+    background-color: $mantis;
+    color: $white;
+    border: 2px solid $azure;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
