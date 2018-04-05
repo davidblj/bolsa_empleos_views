@@ -38,6 +38,7 @@ $login-height: 100vh;
     background: $azure;
   }
 }
+
 .login-form {
 
   @include mid-positioning;
@@ -59,9 +60,7 @@ $login-height: 100vh;
 
   text-align: center;
 
-    &__submit {
-
-    }
+    &__submit {}
 
     &__sign-up {
       margin-top: 5rem;

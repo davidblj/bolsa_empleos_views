@@ -138,6 +138,8 @@ body {
       height: 5rem; }
       .applicants__navigation img:hover {
         cursor: pointer; }
+  .applicants .applicants__list {
+    display: inline-block; }
 
 .applicants-header {
   height: 8rem;
@@ -260,6 +262,28 @@ body {
       .login-field__input input:focus {
         border-bottom: 2px solid #5cc26c; }
 
+.sign-up {
+  height: 100vh;
+  background: #f8f9fa;
+  position: relative; }
+  .sign-up-card {
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 15px -2px #CDD9DC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .sign-up-card_size_big {
+      width: 90rem; }
+    .sign-up-card_size_small {
+      width: 55rem; }
+    .sign-up-card_size_extra-small {
+      width: 50rem; }
+    .sign-up-card_rounded-corners {
+      border-radius: 20px;
+      overflow: hidden; }
+
 .header {
   height: 8vh;
   width: 100vw;
@@ -369,3 +393,37 @@ body {
       .login-form-footer__recovery:hover {
         text-decoration: underline;
         cursor: pointer; }
+
+.submition-status {
+  text-align: center; }
+  .submition-status-footer {
+    padding: 3rem; }
+    .submition-status-footer__hint {
+      font-size: 1.6rem;
+      font-weight: 600; }
+      .submition-status-footer__hint_color_green {
+        color: #5cc26c; }
+      .submition-status-footer__hint_color_red {
+        color: #E95A51; }
+
+.submition-status-body__icon {
+  padding-top: 8rem;
+  padding-bottom: 2rem; }
+  .submition-status-body__icon img {
+    height: 12rem; }
+
+.submition-status-body-message {
+  padding: 0 7rem 3rem;
+  color: #fff; }
+  .submition-status-body-message__header {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600; }
+  .submition-status-body-message__body {
+    font-size: 1.6rem; }
+
+.submition-status-body_color_green {
+  background-color: #72ca80; }
+
+.submition-status-body_color_red {
+  background-color: #ec746c; }

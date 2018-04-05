@@ -1,0 +1,33 @@
+
+.sign-up {
+
+  height: 100vh;
+  background: $athensGray;
+  position: relative;
+
+  &-card {
+
+    background: $white;
+    border: none;
+
+    @include strong-shadow;
+    @include mid-positioning;
+
+    &_size_big {
+      width: 90rem;
+    }
+
+    &_size_small {
+      width: 55rem;
+    }
+
+    &_size_extra-small {
+      width: 50rem;
+    }
+
+    &_rounded-corners {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+  }
+}
