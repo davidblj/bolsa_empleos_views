@@ -1,4 +1,5 @@
-$icon-height: 5rem;
+$icon-height: 4.5rem;
+$item-vertical-padding: 3rem;
 
 .panel {
 
@@ -9,18 +10,23 @@ $icon-height: 5rem;
 
   &__item {
 
-    height: 14rem;
-    padding: 3rem 0;
+    height: 13rem;
+    padding: $item-vertical-padding 0;
     margin: 0 2rem;
     text-align: center;
+    letter-spacing: 0.5px;
 
     & img {
         transition: transform .1s;
         height: $icon-height;
     }
 
+    // the label middle positioning is set manually
     & .label {
         transition: color .5s;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
     }
 
     &_active {
@@ -33,10 +39,10 @@ $icon-height: 5rem;
       }
     }
 
-    // with opacity ?
     &_inactive {
 
       color: $mountainMist;
+      opacity: 0.8;
 
       &:not(:last-child) {
         border-bottom: 1px solid $geyser;
@@ -46,7 +52,7 @@ $icon-height: 5rem;
     &:hover {
 
       cursor: pointer;
-      opacity: none;
+      opacity: 1;
 
       & img {
         transform: scale(1.1);
@@ -58,10 +64,4 @@ $icon-height: 5rem;
     }
 
   }
-}
-
-.label {
-  margin-top: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: 600;
 }

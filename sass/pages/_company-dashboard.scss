@@ -1,4 +1,5 @@
 $menu-width: 25rem;
+$background-color: lighten($regentGray, 37%);
 
 .dashboard {
 
@@ -11,17 +12,19 @@ $menu-width: 25rem;
     position: absolute;
     top: 0;
     left: 0;
-    background: $seaShell;
+    // $seaShell
+    background: $background-color;
     z-index:1;
   }
 
   &__content {
 
+    // $seaShell
     position: absolute;
     width: 100%;
     height: $body-height;
     padding-left: $menu-width;
-    background: $seaShell;
+    background: $background-color;
   }
 
 }
