@@ -13,9 +13,6 @@
 .u-relative {
   position: relative; }
 
-.u-inline-display {
-  display: inline-block; }
-
 *,
 *::after
 *::before {
@@ -41,58 +38,56 @@ body {
   background: #F7F9f9;
   box-shadow: 0 0 10px -2px #CDD9DC; }
   .panel__item {
-    height: 13rem;
+    height: 14rem;
     padding: 3rem 0;
     margin: 0 2rem;
-    text-align: center;
-    letter-spacing: 0.5px; }
+    text-align: center; }
     .panel__item img {
       transition: transform .1s;
-      height: 4.5rem; }
+      height: 5rem; }
     .panel__item .label {
-      transition: color .5s;
-      margin-top: 1.5rem;
-      font-size: 1.3rem;
-      font-weight: 600; }
+      transition: color .5s; }
     .panel__item_active {
       color: #464650;
       border-bottom: 3px solid #5cc26c; }
       .panel__item_active img {
         transform: scale(1.1); }
     .panel__item_inactive {
-      color: #928D96;
-      opacity: 0.8; }
+      color: #928D96; }
       .panel__item_inactive:not(:last-child) {
         border-bottom: 1px solid #CDD9DC; }
     .panel__item:hover {
       cursor: pointer;
-      opacity: 1; }
+      opacity: none; }
       .panel__item:hover img {
         transform: scale(1.1); }
       .panel__item:hover .label {
         color: #464650; }
 
+.label {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600; }
+
 .navigation {
   margin: 6rem 8rem 0;
-  border-bottom: 1px solid #CDD9DC; }
+  border-bottom: 2px solid #CDD9DC; }
   .navigation__item {
     display: inline-block;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 1.7rem;
     letter-spacing: 1px;
-    padding: 0 0 2.1rem;
+    padding: 0 0 2.5rem;
     margin-right: 4rem;
     margin-bottom: 0; }
     .navigation__item_active {
       color: #5cc26c;
-      font-weight: 600;
-      border-bottom: 4px solid #5cc26c;
-      box-shadow: inset 0 -9px 7px -7px #a6deaf; }
+      border-bottom: 4px solid #5cc26c; }
     .navigation__item_inactive:hover {
+      color: #928D96;
       cursor: pointer; }
 
 .custom-table {
-  margin: 3rem 8rem 0;
+  margin: 5rem 8rem 0;
   position: relative; }
 
 .table-header {
@@ -113,8 +108,7 @@ body {
     font-size: 1.6rem;
     padding: 1.5rem 2%; }
     .table-row__item img {
-      width: 2rem;
-      cursor: pointer; }
+      width: 2rem; }
   .table-row:hover {
     box-shadow: 0 0 15px -2px #CDD9DC;
     width: calc(100% + 4rem);
@@ -267,7 +261,7 @@ body {
       background-color: #F7F9f9;
       border: none;
       height: 5rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       padding-left: 1rem;
       width: 100%; }
       .log-in-field__input input:focus {
@@ -304,16 +298,6 @@ body {
   display: inline-block; }
   .paginator > * {
     display: inherit; }
-  .paginator__current {
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin: 0 2rem;
-    background: #5cc26c;
-    color: #fff;
-    border-radius: 50%;
-    width: 45px;
-    line-height: 45px;
-    text-align: center; }
 
 .paginator-button {
   letter-spacing: 2px;
@@ -321,40 +305,26 @@ body {
   border-radius: 100px;
   font-size: 1.2rem;
   border: 2px solid #5cc26c;
-  padding: 1rem 1.5rem;
-  position: relative;
-  /* this block is generating the spacing that an absolute positioned
-     element (the page element) would not be able to. */ }
-  .paginator-button img {
-    height: 1.4rem; }
+  padding: 1rem 3rem;
+  position: relative; }
   .paginator-button__page {
     position: absolute;
-    display: inline-block;
-    font-size: 2.2rem;
-    line-height: 0;
-    /* since the parent height collapsed, its position is set manually */
-    margin-top: -.4rem; }
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem; }
+  .paginator-button_position_left {
+    left: 0; }
+  .paginator-button_position_right {
+    right: 0; }
   .paginator-button__direction {
     font-size: 1.1rem; }
-  .paginator-button:hover {
-    cursor: pointer; }
-  .paginator-button .page-block {
-    width: 2rem;
-    display: inline-block;
-    position: relative; }
-    .paginator-button .page-block__left {
-      left: 0; }
-    .paginator-button .page-block__rigth {
-      right: 0; }
 
 .header {
   height: 8vh;
   width: 100vw;
   padding: 1rem;
   background: #F7F9f9;
-  position: relative;
-  box-shadow: 0 0 10px -2px #CDD9DC;
-  z-index: 2; }
+  position: relative; }
   .header__logo {
     position: absolute;
     top: 50%;
@@ -390,14 +360,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #eef0f2;
+    background: #f1f0f0;
     z-index: 1; }
   .dashboard__content {
     position: absolute;
     width: 100%;
     height: 92vh;
     padding-left: 25rem;
-    background: #eef0f2; }
+    background: #f1f0f0; }
 
 .log-in {
   position: relative; }

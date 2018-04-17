@@ -1,0 +1,48 @@
+
+.paginator-button {
+
+  @include button;
+  border: 2px solid $mantis;
+  padding: 1rem 1.5rem;
+  position: relative;
+
+  img {
+    height: 1.4rem;
+  }
+
+  &__page {
+
+    position: absolute;
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height: 0;
+
+    /* since the parent height collapsed, its position is set manually */
+    margin-top: -.4rem;
+  }
+
+  &__direction {
+
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  /* this block is generating the spacing that an absolute positioned
+     element (the page element) would not be able to. */
+  .page-block {
+    width: 2rem;
+    display: inline-block;
+    position: relative;
+
+    &__left {
+      left: 0;
+    }
+
+    &__rigth {
+      right: 0;
+    }
+  }
+}

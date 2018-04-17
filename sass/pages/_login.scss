@@ -1,7 +1,8 @@
 $info-width: 50vw;
 $login-height: 100vh;
+$inputs-margin-bottom: 7rem;
 
-.login {
+.log-in {
 
   position: relative;
 
@@ -39,7 +40,7 @@ $login-height: 100vh;
   }
 }
 
-.login-form {
+.log-in-form {
 
   @include mid-positioning;
   width: 60%;
@@ -53,14 +54,26 @@ $login-height: 100vh;
   }
 
   &__inputs {
-    margin-bottom: 7rem;
+    margin-bottom: $inputs-margin-bottom;
+    position: relative;
   }
 
   &-footer{
 
   text-align: center;
 
-    &__submit {}
+    &__submit {
+
+      img {
+        height: 4rem;
+        animation: {
+          duration: 1s;
+          name: rotate;
+          iteration-count: infinite;
+          timing-function: linear;
+        }
+      }
+    }
 
     &__sign-up {
       margin-top: 5rem;
@@ -88,5 +101,22 @@ $login-height: 100vh;
       }
     }
 
+    &__error {
+
+      position: absolute;
+      bottom: -12rem;
+      transform: translateX(-50%);
+      width:fit-content;
+
+      background: $burntSienna;
+      border-radius: 5px;
+      text-align: center;
+
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $white;
+      display: inline-block;
+      padding: .7rem 4rem;
+    }
   }
 }

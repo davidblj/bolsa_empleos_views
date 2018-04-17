@@ -1,0 +1,27 @@
+.custom-container {
+  position: absolute;
+  top: 40rem;
+  left: 45%;
+}
+
+.paginator {
+
+  display: inline-block;
+
+  & > * {
+    display: inherit;
+  }
+
+  &__current {
+
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0 2rem;
+    background: $mantis;
+    color: $white;
+    border-radius: 50%;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+}

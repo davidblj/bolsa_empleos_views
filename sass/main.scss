@@ -1,3 +1,4 @@
+@import "abstracts/animations";
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/utilities";
@@ -13,6 +14,8 @@
 @import "components/button";
 @import "components/login_field";
 @import "components/card";
+@import "components/paginator";
+@import "components/paginator_button";
 
 @import "layout/header";
 
