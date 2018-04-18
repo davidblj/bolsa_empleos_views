@@ -1,27 +1,51 @@
 .custom-container {
-  position: absolute;
+  position: relative;
   top: 40rem;
   left: 45%;
 }
 
 .paginator {
 
+  transform: translateX(-50%);
   display: inline-block;
+  position: relative;
 
-  & > * {
+  & * {
     display: inherit;
   }
 
-  &__current {
+  // image position set manually
+  img {
+    height: 26px;
+    margin: 0 20px;
+    margin-top: -11px;
+  }
+
+  &__pages {
+
+    margin: 0 2rem;
+  }
+
+  &__page {
+
+    font-size: 2.2rem;
+    width: 45px;
+    text-align: center;
+  }
+
+  &__current-page {
 
     font-size: 2.2rem;
     font-weight: 600;
-    margin: 0 2rem;
     background: $mantis;
     color: $white;
     border-radius: 50%;
     width: 45px;
     line-height: 45px;
     text-align: center;
+
+    &_margin_wide {
+      margin: 0 2rem;
+    }
   }
 }

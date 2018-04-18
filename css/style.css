@@ -296,24 +296,37 @@ body {
       overflow: hidden; }
 
 .custom-container {
-  position: absolute;
+  position: relative;
   top: 40rem;
   left: 45%; }
 
 .paginator {
-  display: inline-block; }
-  .paginator > * {
+  transform: translateX(-50%);
+  display: inline-block;
+  position: relative; }
+  .paginator * {
     display: inherit; }
-  .paginator__current {
+  .paginator img {
+    height: 26px;
+    margin: 0 20px;
+    margin-top: -11px; }
+  .paginator__pages {
+    margin: 0 2rem; }
+  .paginator__page {
+    font-size: 2.2rem;
+    width: 45px;
+    text-align: center; }
+  .paginator__current-page {
     font-size: 2.2rem;
     font-weight: 600;
-    margin: 0 2rem;
     background: #5cc26c;
     color: #fff;
     border-radius: 50%;
     width: 45px;
     line-height: 45px;
     text-align: center; }
+    .paginator__current-page_margin_wide {
+      margin: 0 2rem; }
 
 .paginator-button {
   letter-spacing: 2px;
@@ -325,8 +338,6 @@ body {
   position: relative;
   /* this block is generating the spacing that an absolute positioned
      element (the page element) would not be able to. */ }
-  .paginator-button img {
-    height: 1.4rem; }
   .paginator-button__page {
     position: absolute;
     display: inline-block;
@@ -341,7 +352,8 @@ body {
   .paginator-button .page-block {
     width: 2rem;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    height: inherit; }
     .paginator-button .page-block__left {
       left: 0; }
     .paginator-button .page-block__rigth {
