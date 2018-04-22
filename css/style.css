@@ -16,6 +16,9 @@
 .u-inline-display {
   display: inline-block; }
 
+.u-center-aligntment {
+  text-align: center; }
+
 *,
 *::after
 *::before {
@@ -297,34 +300,32 @@ body {
 
 .custom-container {
   position: relative;
-  top: 40rem;
-  left: 45%; }
+  top: 40rem; }
 
 .paginator {
   transform: translateX(-50%);
   display: inline-block;
+  left: 50%;
   position: relative; }
   .paginator * {
-    display: inherit; }
+    display: inherit;
+    text-align: center; }
   .paginator img {
     height: 26px;
-    margin: 0 20px;
-    margin-top: -11px; }
+    margin: -11px 20px 0; }
   .paginator__pages {
     margin: 0 2rem; }
   .paginator__page {
-    font-size: 2.2rem;
-    width: 45px;
-    text-align: center; }
+    font-size: 1.7rem;
+    width: 45px; }
   .paginator__current-page {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     background: #5cc26c;
     color: #fff;
     border-radius: 50%;
-    width: 45px;
-    line-height: 45px;
-    text-align: center; }
+    width: 43px;
+    line-height: 43px; }
     .paginator__current-page_margin_wide {
       margin: 0 2rem; }
 
@@ -358,6 +359,39 @@ body {
       left: 0; }
     .paginator-button .page-block__rigth {
       right: 0; }
+
+.candidate_card {
+  border-radius: 5px;
+  background: #f8f9fa;
+  padding: 2.5rem 7rem;
+  margin-right: 3rem;
+  position: relative;
+  box-shadow: 0 0 15px -2px #CDD9DC; }
+  .candidate_card__image {
+    position: absolute;
+    top: 10px;
+    left: -25px; }
+    .candidate_card__image img {
+      height: 70px;
+      box-shadow: 0 0 10px -2px #CDD9DC; }
+  .candidate_card__title {
+    font-size: 2rem; }
+  .candidate_card__date {
+    color: #848ca0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem; }
+  .candidate_card__footer {
+    border-top: 1px solid #e4e2e6;
+    height: 5rem; }
+  .candidate_card__options {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    margin-right: 2rem; }
+    .candidate_card__options img {
+      height: 2rem;
+      cursor: pointer; }
 
 .header {
   height: 8vh;
@@ -393,6 +427,11 @@ body {
       display: inline-block; }
       .header .user__logo img {
         height: 4rem; }
+
+.jobs {
+  margin: 10rem 40rem; }
+  .jobs .row {
+    margin-bottom: 7rem; }
 
 .dashboard {
   position: relative; }

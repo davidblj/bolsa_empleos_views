@@ -16,9 +16,11 @@
 @import "components/card";
 @import "components/paginator";
 @import "components/paginator_button";
+@import "components/candidate_card";
 
 @import "layout/header";
 
+@import "pages/candidate-dashboard";
 @import "pages/company-dashboard";
 @import "pages/login";
 @import "pages/sign-up-submition";
