@@ -1,4 +1,4 @@
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'); // bootstrap v4
+@import  url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'); // bootstrap v4
 
 *,
 *::after
@@ -12,6 +12,8 @@ html {
     font-size: 62.5%;
 }
 
-body {    
+body {
     box-sizing: border-box;
 }
+
+$grid-gutter-width: 100px;
