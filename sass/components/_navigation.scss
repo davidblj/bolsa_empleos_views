@@ -15,10 +15,10 @@
     margin-bottom: 0;
 
     &_active {
+
       color: $mantis;
       font-weight: 600;
-      border-bottom: 4px solid $mantis;
-      box-shadow: inset 0 -9px 7px -7px lighten($mantis, 20%);
+      border-bottom: 2px solid $mantis;
     }
 
     &_inactive {
