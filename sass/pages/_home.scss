@@ -2,8 +2,8 @@
 .home-header {
 
     height: 80vh;
-    // background-color: lighten($mantis, 5%); 
-    background-color: $mantis;
+    background-color: lighten($mantis, 5%); 
+    // background-color: $mantis;
     position: relative;
 
     &__text-box {
@@ -21,7 +21,7 @@
         &_main {
 
             color: white;
-            font-size: 4rem;
+            font-size: 4.5rem;
             line-height: 3.5rem;
             letter-spacing: 1px;        
             font-weight: 300;
@@ -30,12 +30,41 @@
         &_sub {
 
             color: white;
-            font-size: 1.7rem;            
+            font-size: 2rem;            
         }
     }
+}
 
-    &__search {
+.home-info {
 
+    height: 100vh;
+    // background: $seaShell;
+    position: relative;
+    text-align: center;
+    padding: 20rem 0;
+
+    &__text-box {
+
+        position: absolute;
+
+        // todo: replace for a mixin
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
+    &__title {
+
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    &__content {
+        font-size: 1.7rem;
+        color: $mountainMist;
+    }
+}
+
+.home-features {
+
 }
  

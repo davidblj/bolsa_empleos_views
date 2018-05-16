@@ -302,11 +302,11 @@ body {
       overflow: hidden; }
 
 .home-search__input {
-  width: 25vw;
+  width: 40rem;
   line-height: 40px;
   border: none;
   box-shadow: none;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   padding: 0;
   padding-left: 10px;
   border-radius: 5px; }
@@ -588,7 +588,7 @@ body {
 
 .home-header {
   height: 80vh;
-  background-color: #5cc26c;
+  background-color: #6fc97d;
   position: relative; }
   .home-header__text-box {
     position: absolute;
@@ -599,10 +599,26 @@ body {
     margin-bottom: 3rem; }
     .home-header__title_main {
       color: white;
-      font-size: 4rem;
+      font-size: 4.5rem;
       line-height: 3.5rem;
       letter-spacing: 1px;
       font-weight: 300; }
     .home-header__title_sub {
       color: white;
-      font-size: 1.7rem; }
+      font-size: 2rem; }
+
+.home-info {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 20rem 0; }
+  .home-info__text-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .home-info__title {
+    font-size: 3rem;
+    font-weight: 300; }
+  .home-info__content {
+    font-size: 1.7rem;
+    color: #928D96; }
