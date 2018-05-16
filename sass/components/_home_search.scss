@@ -1,0 +1,33 @@
+
+$line-height: 40px;
+$border-radius: 5px;
+
+.home-search {
+
+    &__input {
+
+        width: 25vw;
+        line-height: $line-height;   
+        border: none;
+        box-shadow: none;
+        
+        font-size: 1.7rem;
+        padding: 0;     
+        padding-left: 10px;
+        border-radius: $border-radius;
+    }
+
+    &__submit {
+
+        line-height: $line-height;
+        padding: 0 2rem;
+        margin-left: 1rem;     
+        font-weight:600;
+        border-radius: $border-radius;
+        font-size: 1.4rem;
+        display: inline-block;
+        text-align: center;
+        background: $azure;
+        color: $mountainMist;
+    }
+} 

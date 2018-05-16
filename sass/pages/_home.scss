@@ -1,0 +1,41 @@
+
+.home-header {
+
+    height: 80vh;
+    // background-color: lighten($mantis, 5%); 
+    background-color: $mantis;
+    position: relative;
+
+    &__text-box {
+
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {      
+        
+        margin-bottom: 3rem;
+
+        &_main {
+
+            color: white;
+            font-size: 4rem;
+            line-height: 3.5rem;
+            letter-spacing: 1px;        
+            font-weight: 300;
+        }   
+        
+        &_sub {
+
+            color: white;
+            font-size: 1.7rem;            
+        }
+    }
+
+    &__search {
+
+    }
+}
+ 

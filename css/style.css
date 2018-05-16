@@ -301,6 +301,28 @@ body {
       border-radius: 20px;
       overflow: hidden; }
 
+.home-search__input {
+  width: 25vw;
+  line-height: 40px;
+  border: none;
+  box-shadow: none;
+  font-size: 1.7rem;
+  padding: 0;
+  padding-left: 10px;
+  border-radius: 5px; }
+
+.home-search__submit {
+  line-height: 40px;
+  padding: 0 2rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  display: inline-block;
+  text-align: center;
+  background: #F7F9f9;
+  color: #928D96; }
+
 .custom-container {
   position: relative;
   top: 40rem; }
@@ -563,3 +585,24 @@ body {
 
 .submition-status-body_color_red {
   background-color: #ec746c; }
+
+.home-header {
+  height: 80vh;
+  background-color: #5cc26c;
+  position: relative; }
+  .home-header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%); }
+  .home-header__title {
+    margin-bottom: 3rem; }
+    .home-header__title_main {
+      color: white;
+      font-size: 4rem;
+      line-height: 3.5rem;
+      letter-spacing: 1px;
+      font-weight: 300; }
+    .home-header__title_sub {
+      color: white;
+      font-size: 1.7rem; }
