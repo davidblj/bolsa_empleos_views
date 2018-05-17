@@ -34,6 +34,7 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.7;
   color: #464650; }
@@ -300,6 +301,19 @@ body {
     .sign-up-card_rounded-corners {
       border-radius: 20px;
       overflow: hidden; }
+
+.feature-card {
+  width: 35rem;
+  padding: 4rem;
+  text-align: center; }
+  .feature-card__image {
+    margin-bottom: 2rem; }
+    .feature-card__image img {
+      height: 10rem; }
+      .feature-card__image img:hover {
+        transform: scale(1.1); }
+  .feature-card__content {
+    color: #928D96; }
 
 .home-search__input {
   width: 40rem;
@@ -608,17 +622,35 @@ body {
       font-size: 2rem; }
 
 .home-info {
-  height: 100vh;
+  height: 80vh;
+  background: #f1f0f0;
   position: relative;
   text-align: center;
-  padding: 20rem 0; }
+  position: relative; }
   .home-info__text-box {
     position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .home-info__title {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 300; }
   .home-info__content {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #928D96; }
+
+.home-features {
+  height: 60vh;
+  background: #F7F9f9;
+  margin-top: 15rem; }
+  .home-features__content-box {
+    width: 120rem;
+    display: block; }
+  .home-features__spectator {
+    text-align: right; }
+    .home-features__spectator_main {
+      font-size: 4.5rem;
+      font-weight: 300; }
+    .home-features__spectator_sub {
+      font-style: italic;
+      font-size: 2rem; }

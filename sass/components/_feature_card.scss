@@ -1,0 +1,24 @@
+
+.feature-card {
+
+  width: 35rem;
+  padding: 4rem;
+  text-align: center;
+
+  &__image {
+
+    margin-bottom: 2rem;
+
+    img {
+      height: 10rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__content {
+    color: $mountainMist;
+  }
+}

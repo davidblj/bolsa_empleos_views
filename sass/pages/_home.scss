@@ -2,7 +2,7 @@
 .home-header {
 
     height: 80vh;
-    background-color: lighten($mantis, 5%); 
+    background-color: lighten($mantis, 5%);
     // background-color: $mantis;
     position: relative;
 
@@ -14,8 +14,8 @@
         transform: translate(-50%, -50%);
     }
 
-    &__title {      
-        
+    &__title {
+
         margin-bottom: 3rem;
 
         &_main {
@@ -23,48 +23,72 @@
             color: white;
             font-size: 4.5rem;
             line-height: 3.5rem;
-            letter-spacing: 1px;        
+            letter-spacing: 1px;
             font-weight: 300;
-        }   
-        
+        }
+
         &_sub {
 
             color: white;
-            font-size: 2rem;            
+            font-size: 2rem;
         }
     }
 }
 
 .home-info {
 
-    height: 100vh;
-    // background: $seaShell;
+    height: 80vh;
+    background: $seaShell;
     position: relative;
     text-align: center;
-    padding: 20rem 0;
+    position: relative;
 
     &__text-box {
-
-        position: absolute;
-
-        // todo: replace for a mixin
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include mid-positioning;
     }
 
     &__title {
 
-        font-size: 3rem;
+        font-size: 4.5rem;
         font-weight: 300;
     }
 
     &__content {
-        font-size: 1.7rem;
+
+        font-size: 2rem;
         color: $mountainMist;
     }
 }
 
 .home-features {
 
+  height: 60vh;
+  background: $azure;
+  margin-top: 15rem;
+
+  &__content-box {
+
+    width: 120rem;
+    display: block;
+  }
+
+  &__statements {
+  }
+
+  &__spectator {
+
+    text-align: right;
+
+    &_main {
+
+      font-size: 4.5rem;
+      font-weight: 300;
+    }
+
+    &_sub {
+
+      font-style: italic;
+      font-size: 2rem;
+    }
+  }
 }
- 
