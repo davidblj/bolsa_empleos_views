@@ -640,9 +640,10 @@ body {
     color: #928D96; }
 
 .home-features {
-  height: 60vh;
-  background: #F7F9f9;
-  margin-top: 15rem; }
+  height: 60vh; }
+  .home-features__group {
+    padding-top: 15rem;
+    background: #F7F9f9; }
   .home-features__content-box {
     width: 120rem;
     display: block; }

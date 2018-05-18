@@ -63,8 +63,11 @@
 .home-features {
 
   height: 60vh;
-  background: $azure;
-  margin-top: 15rem;
+
+  &__group {
+    padding-top: 15rem;
+    background: $azure;
+  }
 
   &__content-box {
 
