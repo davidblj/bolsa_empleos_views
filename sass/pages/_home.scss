@@ -1,8 +1,7 @@
 
 .home-header {
 
-    height: 80vh;
-    background-color: $mantis;
+    height: 100vh;
     position: relative;
 
     &__text-box {
@@ -11,19 +10,46 @@
         top: 50%;
         left: 40%;
         transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+
+    &__background {
+
+      // imagen por: Alejandro Restrepo Arboleda
+      height: inherit;
+      background-image: url(../../images/udea_camilo.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      // clip-path: polygon(70% 0, 100% 0, 100% 100%, 40% 100%);
     }
 }
 
 .home-info {
 
-    height: 80vh;
+    height: 100vh;
     background: $seaShell;
     position: relative;
     text-align: center;
     position: relative;
 
     &__text-box {
-        @include mid-positioning;
+
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__background {
+
+      @include x-mid-positioning;
+      bottom: 0;
+
+      img {
+        height: 40vh;
+        opacity: .9;
+      }
     }
 }
 

@@ -624,26 +624,40 @@ body {
   background-color: #ec746c; }
 
 .home-header {
-  height: 80vh;
-  background-color: #5cc26c;
+  height: 100vh;
   position: relative; }
   .home-header__text-box {
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    z-index: 5; }
+  .home-header__background {
+    height: inherit;
+    background-image: url(../../images/udea_camilo.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0; }
 
 .home-info {
-  height: 80vh;
+  height: 100vh;
   background: #f1f0f0;
   position: relative;
   text-align: center;
   position: relative; }
   .home-info__text-box {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .home-info__background {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0; }
+    .home-info__background img {
+      height: 40vh;
+      opacity: .9; }
 
 .home-features {
   height: 60vh; }
