@@ -2,8 +2,7 @@
 .home-header {
 
     height: 80vh;
-    background-color: lighten($mantis, 5%);
-    // background-color: $mantis;
+    background-color: $mantis;
     position: relative;
 
     &__text-box {
@@ -12,26 +11,6 @@
         top: 50%;
         left: 40%;
         transform: translate(-50%, -50%);
-    }
-
-    &__title {
-
-        margin-bottom: 3rem;
-
-        &_main {
-
-            color: white;
-            font-size: 4.5rem;
-            line-height: 3.5rem;
-            letter-spacing: 1px;
-            font-weight: 300;
-        }
-
-        &_sub {
-
-            color: white;
-            font-size: 2rem;
-        }
     }
 }
 
@@ -46,21 +25,8 @@
     &__text-box {
         @include mid-positioning;
     }
-
-    &__title {
-
-        font-size: 4.5rem;
-        font-weight: 300;
-    }
-
-    &__content {
-
-        font-size: 2rem;
-        color: $mountainMist;
-    }
 }
 
-// todo: move the main titles styles in to the typography component
 .home-features {
 
   height: 60vh;
@@ -80,18 +46,6 @@
   }
 
   &__spectator {
-
-    &_main {
-
-      font-size: 4.5rem;
-      font-weight: 300;
-    }
-
-    &_sub {
-
-      font-style: italic;
-      font-size: 1.6rem;
-    }
 
     &_align_left {
       text-align: left;

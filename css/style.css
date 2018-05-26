@@ -39,6 +39,29 @@ body {
   line-height: 1.7;
   color: #464650; }
 
+.heading-primary_main {
+  font-size: 4.5rem;
+  font-weight: 300; }
+
+.heading-primary_sub {
+  font-size: 2rem; }
+
+.heading-secondary_main {
+  font-size: 4rem;
+  font-weight: 300; }
+
+.heading-secondary_sub {
+  font-size: 1.6rem; }
+
+.color_gray {
+  color: #928D96; }
+
+.color_white {
+  color: white; }
+
+.weight_cursive {
+  font-style: italic; }
+
 .panel {
   margin-top: 6rem;
   margin-left: 6rem;
@@ -316,17 +339,17 @@ body {
     transform: scale(1.1); }
 
 .home-search__input {
-  width: 40rem;
-  line-height: 40px;
+  width: 60rem;
+  line-height: 50px;
+  border-radius: 5px;
   border: none;
   box-shadow: none;
-  font-size: 1.6rem;
   padding: 0;
   padding-left: 10px;
-  border-radius: 5px; }
+  font-size: 1.8rem; }
 
 .home-search__submit {
-  line-height: 40px;
+  line-height: 50px;
   padding: 0 2rem;
   margin-left: 1rem;
   font-weight: 600;
@@ -602,24 +625,13 @@ body {
 
 .home-header {
   height: 80vh;
-  background-color: #6fc97d;
+  background-color: #5cc26c;
   position: relative; }
   .home-header__text-box {
     position: absolute;
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%); }
-  .home-header__title {
-    margin-bottom: 3rem; }
-    .home-header__title_main {
-      color: white;
-      font-size: 4.5rem;
-      line-height: 3.5rem;
-      letter-spacing: 1px;
-      font-weight: 300; }
-    .home-header__title_sub {
-      color: white;
-      font-size: 2rem; }
 
 .home-info {
   height: 80vh;
@@ -632,12 +644,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .home-info__title {
-    font-size: 4.5rem;
-    font-weight: 300; }
-  .home-info__content {
-    font-size: 2rem;
-    color: #928D96; }
 
 .home-features {
   height: 60vh; }
@@ -647,12 +653,6 @@ body {
   .home-features__content-box {
     width: 120rem;
     display: block; }
-  .home-features__spectator_main {
-    font-size: 4.5rem;
-    font-weight: 300; }
-  .home-features__spectator_sub {
-    font-style: italic;
-    font-size: 1.6rem; }
   .home-features__spectator_align_left {
     text-align: left; }
   .home-features__spectator_align_right {

@@ -1,27 +1,26 @@
 
-$line-height: 40px;
+$line-height: 50px;
 $border-radius: 5px;
 
 .home-search {
 
     &__input {
 
-        width: 40rem;
-        line-height: $line-height;   
+        width: 60rem;
+        line-height: $line-height;
+        border-radius: $border-radius;
         border: none;
         box-shadow: none;
-        
-        font-size: 1.6rem;
-        padding: 0;     
+        padding: 0;
         padding-left: 10px;
-        border-radius: $border-radius;
+        font-size: 1.8rem;
     }
 
     &__submit {
 
         line-height: $line-height;
         padding: 0 2rem;
-        margin-left: 1rem;     
+        margin-left: 1rem;
         font-weight:600;
         border-radius: $border-radius;
         font-size: 1.4rem;
@@ -30,4 +29,4 @@ $border-radius: 5px;
         background: $azure;
         color: $mountainMist;
     }
-} 
+}

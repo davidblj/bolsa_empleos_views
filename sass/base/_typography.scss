@@ -7,3 +7,40 @@ body {
     line-height: 1.7;
     color: $abbey;
 }
+
+.heading-primary {
+
+  &_main {
+    font-size: 4.5rem;
+    font-weight: 300;
+  }
+
+  &_sub {
+    font-size: 2rem;
+  }
+}
+
+.heading-secondary {
+
+  &_main {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  &_sub {
+    font-size: 1.6rem
+  }
+}
+
+
+.color_gray {
+  color: $mountainMist;
+}
+
+.color_white {
+  color: white;
+}
+
+.weight_cursive {
+  font-style: italic;
+}
