@@ -309,11 +309,11 @@ body {
   .feature-card__image {
     margin-bottom: 2rem; }
     .feature-card__image img {
-      height: 10rem; }
-      .feature-card__image img:hover {
-        transform: scale(1.1); }
+      height: 11rem; }
   .feature-card__content {
-    color: #928D96; }
+    color: #777786; }
+  .feature-card:hover img {
+    transform: scale(1.1); }
 
 .home-search__input {
   width: 40rem;
@@ -647,11 +647,13 @@ body {
   .home-features__content-box {
     width: 120rem;
     display: block; }
-  .home-features__spectator {
+  .home-features__spectator_main {
+    font-size: 4.5rem;
+    font-weight: 300; }
+  .home-features__spectator_sub {
+    font-style: italic;
+    font-size: 1.6rem; }
+  .home-features__spectator_align_left {
+    text-align: left; }
+  .home-features__spectator_align_right {
     text-align: right; }
-    .home-features__spectator_main {
-      font-size: 4.5rem;
-      font-weight: 300; }
-    .home-features__spectator_sub {
-      font-style: italic;
-      font-size: 2rem; }

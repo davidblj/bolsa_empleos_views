@@ -60,6 +60,7 @@
     }
 }
 
+// todo: move the main titles styles in to the typography component
 .home-features {
 
   height: 60vh;
@@ -80,8 +81,6 @@
 
   &__spectator {
 
-    text-align: right;
-
     &_main {
 
       font-size: 4.5rem;
@@ -91,7 +90,15 @@
     &_sub {
 
       font-style: italic;
-      font-size: 2rem;
+      font-size: 1.6rem;
+    }
+
+    &_align_left {
+      text-align: left;
+    }
+
+    &_align_right {
+      text-align: right;
     }
   }
 }

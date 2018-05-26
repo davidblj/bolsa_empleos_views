@@ -10,15 +10,18 @@
     margin-bottom: 2rem;
 
     img {
-      height: 10rem;
-
-      &:hover {
-        transform: scale(1.1);
-      }
+      height: 11rem;
     }
   }
 
   &__content {
-    color: $mountainMist;
+    color: $stormGray;
+  }
+
+  &:hover {
+
+    img {
+      transform: scale(1.1);
+    }
   }
 }
