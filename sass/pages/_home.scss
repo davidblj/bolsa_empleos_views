@@ -21,7 +21,6 @@
       background-size: cover;
       background-position: center;
       z-index: 0;
-      // clip-path: polygon(70% 0, 100% 0, 100% 100%, 40% 100%);
     }
 }
 
@@ -47,6 +46,7 @@
       bottom: 0;
 
       img {
+
         height: 40vh;
         opacity: .9;
       }
@@ -55,11 +55,15 @@
 
 .home-features {
 
-  height: 60vh;
+  background: $azure;
 
   &__group {
+
     padding-top: 15rem;
-    background: $azure;
+
+    &:last-child {
+      padding-bottom: 15rem;
+    }
   }
 
   &__content-box {
@@ -68,17 +72,25 @@
     display: block;
   }
 
-  &__statements {
+  &__statements {}
+
+  &__spectator {}
+}
+
+.home-footer {
+
+  background: $mantis;
+  padding: 5rem 0;
+  color: white;
+  font-size: 1.5rem;
+
+  &__column-header {
+    font-size: 1.7rem;
   }
 
-  &__spectator {
+  &__row-header {
 
-    &_align_left {
-      text-align: left;
-    }
-
-    &_align_right {
-      text-align: right;
-    }
+    margin-top: 3.5rem;
+    font-size: 2rem;
   }
 }

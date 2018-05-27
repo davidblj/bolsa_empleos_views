@@ -32,7 +32,6 @@ body {
   }
 }
 
-
 .color_gray {
   color: $mountainMist;
 }
@@ -43,4 +42,8 @@ body {
 
 .weight_cursive {
   font-style: italic;
+}
+
+.weight_bold {
+  font-weight: 600;
 }
