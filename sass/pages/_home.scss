@@ -18,9 +18,9 @@
       // imagen por: Alejandro Restrepo Arboleda
       height: inherit;
       background-image: url(../../images/udea_camilo.jpg);
+      background-attachment: fixed;
       background-size: cover;
       background-position: center;
-      z-index: 0;
     }
 }
 
@@ -74,15 +74,26 @@
 
   &__statements {}
 
-  &__spectator {}
+  &__spectator {
+
+    button {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+
+    .button-spacing {
+      padding: .7rem 3rem;
+    }
+  }
 }
 
 .home-footer {
 
-  background: $mantis;
+  background: lighten($mantis, 4%);
   padding: 5rem 0;
   color: white;
   font-size: 1.5rem;
+  z-index: 5;
 
   &__column-header {
     font-size: 1.7rem;

@@ -283,6 +283,41 @@ body {
     border: 2px solid #F7F9f9;
     cursor: pointer; }
 
+.button-v2 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-radius: 100px;
+  transition: background-color .3s, transform .3s; }
+  .button-v2:hover {
+    cursor: pointer; }
+  .button-v2_disabled {
+    cursor: default !important; }
+    .button-v2_disabled:hover {
+      opacity: .9; }
+  .button-v2_shape_square {
+    border-radius: 3px; }
+  .button-v2_shape_circular {
+    border-radius: 100px; }
+  .button-v2_color_transparent {
+    background-color: #F7F9f9;
+    border: 2px solid #5cc26c; }
+  .button-v2_color_dark {
+    background: #5cc26c;
+    color: white;
+    border: 2px solid #F7F9f9; }
+  .button-v2_hover-color_transparent:hover {
+    background-color: #F7F9f9;
+    color: #373738;
+    border: 2px solid #5cc26c; }
+  .button-v2_hover-color_dark:hover {
+    background-color: #5cc26c;
+    color: #fff;
+    border: 2px solid #F7F9f9; }
+  .button-v2_animation_hover:hover {
+    border: inherit;
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(92, 194, 108, 0.5); }
+
 .log-in-field {
   text-align: center; }
   .log-in-field:not(:last-child) {
@@ -638,9 +673,9 @@ body {
   .home-header__background {
     height: inherit;
     background-image: url(../../images/udea_camilo.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-    z-index: 0; }
+    background-position: center; }
 
 .home-info {
   height: 100vh;
@@ -671,12 +706,18 @@ body {
   .home-features__content-box {
     width: 120rem;
     display: block; }
+  .home-features__spectator button {
+    margin-top: 2rem;
+    font-size: 1.4rem; }
+  .home-features__spectator .button-spacing {
+    padding: .7rem 3rem; }
 
 .home-footer {
-  background: #5cc26c;
+  background: #6bc879;
   padding: 5rem 0;
   color: white;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  z-index: 5; }
   .home-footer__column-header {
     font-size: 1.7rem; }
   .home-footer__row-header {
