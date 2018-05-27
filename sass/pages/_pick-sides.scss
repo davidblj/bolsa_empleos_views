@@ -1,0 +1,32 @@
+
+.pick-sides-header {
+
+  height: 50vh;
+  background-image: url(../../images/udea_patio.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+
+  &__text-box {
+    @include mid-positioning;
+    background: black;
+    padding: 0 2rem;
+  }
+}
+
+.pick-sides-content {
+
+  &__container {
+    margin-top: 10rem;
+  }
+
+  &__hint {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .button-spacing {
+    width: 25rem;
+    padding: 1.5rem 0rem;
+  }
+}

@@ -53,6 +53,10 @@ body {
 .heading-secondary_sub {
   font-size: 1.6rem; }
 
+.heading-tertiary_main {
+  font-size: 3rem;
+  font-weight: 300; }
+
 .color_gray {
   color: #928D96; }
 
@@ -626,6 +630,31 @@ body {
       color: #fff;
       display: inline-block;
       padding: .7rem 4rem; }
+
+.pick-sides-header {
+  height: 50vh;
+  background-image: url(../../images/udea_patio.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative; }
+  .pick-sides-header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    padding: 0 2rem; }
+
+.pick-sides-content__container {
+  margin-top: 10rem; }
+
+.pick-sides-content__hint {
+  margin-top: 2rem;
+  font-size: 1.6rem; }
+
+.pick-sides-content .button-spacing {
+  width: 25rem;
+  padding: 1.5rem 0rem; }
 
 .submition-status {
   text-align: center; }

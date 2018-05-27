@@ -32,6 +32,14 @@ body {
   }
 }
 
+.heading-tertiary {
+
+  &_main {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+
 .color_gray {
   color: $mountainMist;
 }
