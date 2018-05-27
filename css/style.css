@@ -645,14 +645,14 @@ body {
     background: black;
     padding: 0 2rem; }
 
-.pick-sides-content__container {
+.pick-sides-body__sides {
   margin-top: 10rem; }
 
-.pick-sides-content__hint {
+.pick-sides-body__side-hint {
   margin-top: 2rem;
   font-size: 1.6rem; }
 
-.pick-sides-content .button-spacing {
+.pick-sides-body .button-spacing {
   width: 25rem;
   padding: 1.5rem 0rem; }
 
@@ -742,13 +742,16 @@ body {
     padding: .7rem 3rem; }
 
 .home-footer {
-  background: #6bc879;
-  padding: 5rem 0;
+  background: #5cc26c;
+  padding: 3.5rem 0;
   color: white;
-  font-size: 1.5rem;
-  z-index: 5; }
+  font-size: 1.5rem; }
+  .home-footer__column {
+    width: 30rem; }
+    .home-footer__column:not(:last-child) {
+      margin-right: 40rem; }
   .home-footer__column-header {
     font-size: 1.7rem; }
   .home-footer__row-header {
-    margin-top: 3.5rem;
-    font-size: 2rem; }
+    font-size: 1.7rem;
+    margin-top: 3.5rem; }
